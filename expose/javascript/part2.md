@@ -21,27 +21,27 @@
 
 11. `[50, 100, 150]`, this is because although `discounted` is declared as a `const`, what stays "constant" is the reference to an array that `discounted` holds. Thus the array is still mutable, but it would be illegal to make `discounted` point to another array!
 
-12. A. student.name;
-    B. student['Grad Year']
-    C. student.greeting()
-    D. student['Favorite Teacher'].name
-    E. student.courseLoad[0]
+12. A. student.name    
+    B. student['Grad Year']  
+    C. student.greeting()  
+    D. student['Favorite Teacher'].name   
+    E. student.courseLoad[0]  
 
-13. A. '32', this is because the `+` operation acts as concatenation and thus causes a string conversion, thus `2` become `'2'`, which `'3' + '2' = '32'`. 
-    B. 1, this is because the `-` operation causes a numeric conversion, thus `'3'` becomes `3`, which `3 - 2 = 1`.
-    C. 3, this is because `+` causes a numeric conversion, thus `null` becomes `0`.
-    D. '3null', this is because `+` acts as concatenation and thus a string conversion, thus `null` becomes `'null'`.
-    E. 4, this is because `+` causes as a numeric conversion, thus `true` becomes `1`.
-    F. 0, this is because `+` causes as a numeric conversion, thus `false` and `null` become `0`.
-    G. '3undefined', this is because `+` acts as concatenation and thus a string conversion, thus `undefined` becomes `'undefined'`.
-    H. NaN, this is because the `-` operation causes a numeric conversion, thus `'3'` becomes `3` and `undefined` becomes `NaN`, which `3 - NaN = NaN`.
+13. A. '32', this is because the `+` operation acts as concatenation and thus causes a string conversion, thus `2` become `'2'`, which `'3' + '2' = '32'`.   
+    B. 1, this is because the `-` operation causes a numeric conversion, thus `'3'` becomes `3`, which `3 - 2 = 1`.  
+    C. 3, this is because `+` causes a numeric conversion, thus `null` becomes `0`.  
+    D. '3null', this is because `+` acts as concatenation and thus a string conversion, thus `null` becomes `'null'`.  
+    E. 4, this is because `+` causes as a numeric conversion, thus `true` becomes `1`.  
+    F. 0, this is because `+` causes as a numeric conversion, thus `false` and `null` become `0`.  
+    G. '3undefined', this is because `+` acts as concatenation and thus a string conversion, thus `undefined` becomes `'undefined'`.  
+    H. NaN, this is because the `-` operation causes a numeric conversion, thus `'3'` becomes `3` and `undefined` becomes `NaN`, which `3 - NaN = NaN`.  
 
-14. A. true, this is because when comparing a string to a number (`>`), a numeric conversion is caused, thus `'2'` becomes `2` in which `2 > 1 -> true`.
-    B. false, this is because when comparing two strings (`<`), the comparison is done through lexigraphical ordering: `'2' is NOT < '1'`.
-    C. true, this is because when comparing a string to a number (`==`), a numeric conversion is caused, thus `'2'` becomes `2` in which `2 == 2 -> true`.
-    D. false, this is because `===` checks equality **WITHOUT** type conversion. Thus testing equality of a number and a string would be _false_!
-    E. false, this is because when comparing a boolean to a number (`==`), a numeric conversion is caused, thus `true` becomes `1`, which `1 == 2 -> false`.
-    F. true, this is because `Boolean(2)` _casts_ `2` into a boolean value, thus `2` becomes `true`. In which, they are of the same type and of the same value: `true === true -> true`.
+14. A. true, this is because when comparing a string to a number (`>`), a numeric conversion is caused, thus `'2'` becomes `2` in which `2 > 1 -> true`.  
+    B. false, this is because when comparing two strings (`<`), the comparison is done through lexigraphical ordering: `'2' is NOT < '1'`.  
+    C. true, this is because when comparing a string to a number (`==`), a numeric conversion is caused, thus `'2'` becomes `2` in which `2 == 2 -> true`.  
+    D. false, this is because `===` checks equality **WITHOUT** type conversion. Thus testing equality of a number and a string would be _false_!  
+    E. false, this is because when comparing a boolean to a number (`==`), a numeric conversion is caused, thus `true` becomes `1`, which `1 == 2 -> false`.  
+    F. true, this is because `Boolean(2)` _casts_ `2` into a boolean value, thus `2` becomes `true`. In which, they are of the same type and of the same value: `true === true -> true`.  
 
 15. `==` checks equality ***with*** type conversions (_not-strict_) while `===` checks equality ***without*** type conversions (_strict_). As seen with the examples, when using `==`, `'2'` was able to convert to `2` if a numeric conversion was needed to test equality, whereas that was not allowed in the case of `===`.
 

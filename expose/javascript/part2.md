@@ -56,4 +56,4 @@
     4  
     3  
     2  
-    _Comment_: I would have thought the 3 prints before 4 because it would have 0 delay. After doing more research, using setTimeout, you make that callback **asynch.** in which all **synch.** calls will occur before (thus 4 prints before 3).
+    _Comment_: I would have thought the 3 prints before 4 because it would have 0 delay. After doing more research, using `setTimeout()`, you make that callback **asynch.** in which all **synch.** calls will occur before (thus 4 prints before 3).

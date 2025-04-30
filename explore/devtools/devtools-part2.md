@@ -1,0 +1,2 @@
+1. What is wrong is the fact that `num1` and `num2` are read as strings, thus `result = num1 + num2` make `+` a concatenation operation, which makes `result` a **string**.
+2. I would fix this by casting num1 and num2 into integers, thus using `+` would be an addition operation! I could do this by doing `Number(num1)` and `Number(num2)`
